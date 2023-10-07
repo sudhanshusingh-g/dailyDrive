@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Daily Drive",
+    "version": "1.0",
+    "description": "Helps to increase your productivity",
+    "icons": {
+      "16": "./images/icon.png",
+      "48": "./images/icon.png",
+      "128": "./images/icon.png"
+    },
+    "action": {
+      "default_icon": "./images/icon.png",
+      "default_title": "Daily Drive",
+      "default_popup": "popup/popup.html"
+    },
+    "permissions": ["storage", "alarms", "notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options/options.html"
+  }
