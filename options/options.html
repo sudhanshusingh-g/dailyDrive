@@ -5,11 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="options.css" />
     <title>Daily Drive Options</title>
+    <style>
+      body{
+        text-align: center;
+        background: linear-gradient(180deg, rgba(0,194,255,0.896796218487395) 21%, rgba(231,186,186,1) 50%, rgba(241,241,247,1) 94%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input{
+        padding: 1rem;
+        font-size: 1.5rem;
+        outline: none;
+        background:none;
+        border: none;
+        border-bottom: 3px solid mediumslateblue;
+        text-align: center;
+        font-weight: bold;
+      }
+      button{
+        padding: 1rem 2rem;
+        background-color: mediumslateblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: rgb(108, 83, 250);
+      }
+    </style>
   </head>
   <body>
-    <h1>Focus mode</h1>
     <label>
-      <h2>Set your focus period</h2>
+      <h1>Set your focus duration</h1>
       <input id="time-option" type="number" min="1" max="60" value="25" />
     </label>
     <button id="save-btn">Save changes</button>

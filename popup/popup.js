@@ -1,8 +1,8 @@
 const currDate=document.getElementById("currDate");
 const currTime=document.getElementById("currTime");
 const date=new Date();
-currDate.innerHTML=`${date.getDate()}/${date.getMonth()}`
-currTime.innerHTML=`${date.getHours()}:${date.getMinutes()}`
+currDate.innerHTML=`${date.toDateString()}`
+currTime.innerHTML=`${date.toLocaleTimeString()}`
 
 let tasks = []
 
