@@ -32,3 +32,4 @@ chrome.storage.local.get(["timer", "isRunning", "timeOption"], (res) => {
         isRunning: "isRunning" in res ? res.isRunning : false,
     })
 })
+
